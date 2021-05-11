@@ -42,6 +42,7 @@ class KategoriBarangController extends Controller
         $kategori->kategori = $request->input('kategori');
 
         $kategori->save();
+        // dd($kategori);
         return redirect()-> route('kategori.index');
     }
 

@@ -18,7 +18,7 @@
             <div class="card-body">
               <div class="form-group">
                 <label for="kode_barang">Kode Barang</label>
-                <input type="text" class="form-control" id="kode_barang" name="kode_barang" placeholder="Kode Barang" required>
+                <input type="text" class="form-control" value="{{$kode+1}}" autofocus id="kode_barang" name="kode_barang" placeholder="Kode Barang" required>
               </div>
 
               <div class="form-group">

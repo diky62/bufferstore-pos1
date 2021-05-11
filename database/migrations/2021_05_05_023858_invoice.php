@@ -19,8 +19,8 @@ class Invoice extends Migration
             $table->integer('marketplace_id')->unsigned();
             $table->integer('ekspedisi_id')->unsigned();
             $table->string('nama');
-            $table->string('alamat');
-            $table->string('no_hp');
+            // $table->string('alamat');
+            // $table->string('no_hp');
             $table->date('tanggal');
             $table->timestamps();
 

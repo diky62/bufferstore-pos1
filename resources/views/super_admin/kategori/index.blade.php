@@ -7,7 +7,7 @@
     {{-- end heading --}}
   
     <div class="panel-body">
-      <form method="POST" action="{{ route('laporan.store') }}" >
+      <form method="POST" action="{{ route('kategori.store') }}" >
           {{ csrf_field() }}
 
         {{-- <div class="card-body"> --}}
@@ -18,7 +18,7 @@
             <div class="card-body">            
               <div class="form-group">
                  <label for="kategori">Kategori Barang</label>
-              <input type="text" class="form-control" id="kategori" name="kategori" placeholder="Kategori Barang" required>
+              <input type="text" oninput="this.value = this.value.toCapitalizedCase()" class="form-control" id="kategori" name="kategori" placeholder="Kategori Barang" required>
             </div>
             <button type="submit" class="btn btn-success center-block btn-block"><i class="fa fa-save "></i>  Submit</button>
             </div>

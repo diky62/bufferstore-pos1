@@ -64,9 +64,14 @@
                       </div>
 
                       <div class="form-group">
+                        <label for="tanggal">Tanggal</label>
+                        <input type="date" class="form-control" id="tanggal" name="invoice[tanggal]" placeholder="Tanggal" required>
+                      </div>
+
+                      {{-- <div class="form-group">
                         <label for="alamat">Alamat</label>
                         <textarea class="form-control" id="alamat" name="invoice[alamat]" placeholder="Alamat" required></textarea>
-                      </div>
+                      </div> --}}
 
 
                     </div>
@@ -97,15 +102,12 @@
                           </select>
                       </div>
 
-                      <div class="form-group">
+                      {{-- <div class="form-group">
                         <label for="no_hp">No Hp</label>
                         <input type="text" class="form-control" id="no_hp" name="invoice[no_hp]" placeholder="No Hp" required onkeypress="return hanyaAngka(event)">
-                      </div>
+                      </div> --}}
 
-                      <div class="form-group">
-                        <label for="tanggal">Tanggal</label>
-                        <input type="date" class="form-control" id="tanggal" name="invoice[tanggal]" placeholder="Tanggal" required>
-                      </div>
+                      
 
                       
                     </div>

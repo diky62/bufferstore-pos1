@@ -17,6 +17,7 @@ class StokBarangController extends Controller
      */
     public function index()
     {
+
         $data['stok_barangs']=StokBarang::with('kategori')->orderBy('qty','asc')->get();
         // dd($data);
         return view('super_admin/stok_barang.index',$data);
@@ -29,8 +30,11 @@ class StokBarangController extends Controller
      */
     public function create()
     {
+        $data['kode'] = StokBarang::max('id');
+        // $kode_baru = $kode;
         $data['kategoris']=KategoriBarang::get();
-        // dd($data);
+        // dd($kode_baru);
+        
         return view('super_admin/stok_barang.create',$data);
     }
 

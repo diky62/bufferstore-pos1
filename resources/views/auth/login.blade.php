@@ -29,7 +29,7 @@
                     <a class="forgot-password" href="#">Lupa Password?</a>
                 </div>
                 <input type="submit" name="login" value="Login" class="button"/>
-                <a href="{{ route('register') }}" class="register">Register</a>
+                {{-- <a href="{{ route('register') }}" class="register">Register</a> --}}
             </form>
 </div>
 @endsection
